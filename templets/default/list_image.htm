@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit" />
+<meta name="robots" content="index, follow" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/skin/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/et-line.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/animate.min.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/settings.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/navstylechange.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/cubeportfolio-4.min.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/style.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/responsive.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/tk.css" media="screen" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="/skin/js/jquery-1.20.2.min.js"></script>
+<script type="text/javascript" src="/skin/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/skin/js/modernizr.custom.js"></script>
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+<!--[if lt IE 9]>
+<script src="/skin/js/html5.js"></script>
+<script src="/skin/js/respond.min.js"></script>
+<style>
+	article,aside,dialog,footer,header,section,nav,figure,menu{display:block;padding:0;margin:0;}
+</style>
+<link rel="stylesheet" href="/skin/css/ie.css" type="text/css" media="screen"/>
+<![endif]-->
+
+<!--[if lte IE 9]>
+<script src="/skin/js/jquery.placeholder.js"></script>
+<script>
+jQuery(document).ready(function($){
+	$('input, textarea').placeholder();
+});
+</script>
+<script type="text/javascript" src="/skin/js/pie.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$('.indexci img').each(function() {
+		PIE.attach(this);  
+	});  
+});
+</script>
+<![endif]-->
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script type="text/javascript" src="/skin/js/selectivizr.js"></script>
+  <script type="text/javascript" src="/skin/js/excanvas.compiled.js"></script>
+<![endif]-->
+</head>
+<body>
+<!--[if lt IE 8]>
+	<div class="lt-ie8-bg">
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser.</p>
+		<p>Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<p class="browsehappy">对不起，您正在使用的是 <strong>过时</strong> 的浏览器.</p>
+		<p>请升级您的浏览器（IE8+，或者是火狐、谷歌、Opera、Safari等现代浏览器），以改进您的用户体验！</p>
+	</div>
+	<style>
+	.lt-ie8-bg{z-index:11111;position:absolute;top:0;left:0;right:0;bottom:0;background-color:#333;color:#999;padding:100px 20px;text-align:center;font-size:26px}
+	.lt-ie8-bg a{color:#f5f5f5;border-bottom:2px solid #fff}
+	.lt-ie8-bg a:hover{text-decoration:none}
+	#page-body-wrap{display:none;}
+	</style>
+<![endif]-->
+<div class="wrapper" id="page-body-wrap">
+{dede:include filename="head.htm"/}
+<div class="breadcrumb-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-4 bcid-cat">{dede:field name='typeid' function="GetTopTypename(@me)"/}</div>
+      <div class="col-md-9 col-sm-8 location"><i class="fa fa-map-marker"></i> &nbsp;<span>当前位置： {dede:field name='position'/}</span></div>
+    </div>
+  </div>
+</div>
+<div class="page-container" id="innerpage-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="main col-md-9 inner-left" role="main">
+        <div class="our-work picture-wrap">
+          <div id="gallery-container">
+            <div class="row gallery-3-columns isotope-x clearfix"> {dede:list pagesize ='9'}
+              <div class="gallery-item isotope-item print-media col-lg-4 col-sm-4 col-xs-6">
+                <div class="inner-contents">
+                  <figure> <a class="gallery-btn swipebox" href="[field:picname/]">查看更多</a>
+                    <div class="media-container"></div>
+                    <img src="[field:picname/]" alt="[field:title/]"/> </figure>
+                  <h5 class="item-title"><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h5>
+                </div>
+              </div>
+              {/dede:list} </div>
+            <div id="pages" class="page">{dede:pagelist listitem="index,end,pre,next,pageno" listsize="5"/}</div>
+          </div>
+        </div>
+        <link href="/skin/css/swipebox.css" rel="stylesheet" media="all"/>
+        <script src="/skin/js/jquery.swipebox.js"></script> 
+        <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".swipebox").swipebox();
+		});
+		</script> 
+      </div>
+      {dede:include filename="left.htm"/} </div>
+  </div>
+</div>
+<div class="for-bottom-padding"></div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

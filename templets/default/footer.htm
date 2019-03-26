@@ -1,0 +1,132 @@
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 foot-about">
+        <div class="widget_text footer-widget">
+          <div class="textwidget">
+            <p class="foot-logo"><a href="/"><img src="/skin/images/logo_footer.png"/></a></p>
+            <div class="f-about"> {dede:sql sql='Select content from dede_arctype where id=9'} 
+              
+              [field:content  function='cn_substr(html2text(@me),400)'/]...
+              
+              {/dede:sql}</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 foot-contact">
+        <div class="widget_primary-get-in-touch footer-widget"> {dede:type typeid='17'}
+          <h4 class="widget-title dark-title"><a href="[field:typelink/]">[field:typename/]</a></h4>
+          {/dede:type}
+          <ul class="contact-footer contact-composer">
+            <li> <i class="icon-map-pin"></i> <span>地址：{dede:global.cfg_adr/}</span> </li>
+            <li> <i class="icon-phone"></i> <span>联系电话：{dede:global.cfg_tel/}</span> </li>
+            <li> <i class="icon-mobile"></i> <span>传真：{dede:global.cfg_fax/}</span> </li>
+            <li> <i class="icon-envelope"></i> <span>E-mail: {dede:global.cfg_email/}</span> </li>
+            <li> <i class="icon-globe"></i> <span>微博：{dede:global.cfg_weibo/}</span> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 foot-nav">
+        <div class="widget_categories footer-widget">
+          <h4 class="widget-title">快捷导航</h4>
+          <ul class="f-nav">
+            <li><a href="/"><i class="fa fa-caret-right"></i> &nbsp;网站首页</a></li>
+            {dede:channel type='top' row='6'}
+            <li><a href="[field:typeurl/]"><i class="fa fa-caret-right"></i> &nbsp;[field:typename/]</a></li>
+            {/dede:channel}
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 foot-qrcode">
+        <div class="footer-widget">
+          <h4 class="widget-title">扫描二维码</h4>
+          <div class="f-qrcode"> <img src="/skin/images/qrcode.png"/> </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-6 col-ms-12 pull-left copy-left" style="width:100%;text-align:center;">
+          <div class="copyright">{dede:global.cfg_powerby/}</div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-ms-12 pull-right copy-right" style="z-index:100;display:none;">
+          <div class="foot_menu">
+            <div class="menu-footer-menu-container">
+              <ul>
+                <li><a href="http://www.dede58.com/" target="_blank">技术支持：织梦58</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript" src="/skin/js/jquery.themepunch.tools.min.js"></script> 
+<script type="text/javascript" src="/skin/js/jquery.themepunch.revolution.min.js"></script> 
+<script type="text/javascript" src="/skin/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="/skin/js/retina.js"></script> 
+<script type="text/javascript" src="/skin/js/waypoints.min.js"></script> 
+<script type="text/javascript" src="/skin/js/sticky.js"></script> 
+<script type="text/javascript" src="/skin/js/jquery.inview.js"></script> 
+<script type="text/javascript" src="/skin/js/jquery.parallax-1.1.3.js"></script> 
+<script type="text/javascript" src="/skin/js/jquery.cubeportfolio.min.js"></script> 
+<script type="text/javascript" src="/skin/js/portfolio-main.js"></script> 
+<script type="text/javascript" src="/skin/js/main.js"></script>
+<nav id="mmenu" class="noDis">
+  <div class="mmDiv">
+    <div class="MMhead"> <a href="#mm-0" class="closemenu noblock">X</a> <a href="{dede:global.cfg_weibo/}" target="_blank" class="noblock"><i class="fa fa-weibo"></i></a> <a href="{dede:global.cfg_qqweibo/}" target="_blank" class="noblock"><i class="fa fa-tencent-weibo"></i></a> </div>
+    <div class="mm-search">
+      <form  class="mm-search-form" name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+        <input type="hidden" name="kwtype" value="0" />
+        <input type="text" autocomplete="off" value="" name="q" class="side-mm-keyword" placeholder="输入关键字..."/>
+      </form>
+    </div>
+    <ul>
+      <li class="m-Lev1 m-nav_0"><a href="/">网站首页</a></li>
+      {dede:channelartlist typeid='top'}
+      <li class="m-Lev1 m-nav_4"> <a href="{dede:field name='typeurl'/}" class="m-menu1">{dede:field name='typename'/}</a>
+        <ul class="m-submenu">
+          {dede:channel type='son' noself='yes'}
+          <li class="Lev2"> <a href="[field:typeurl/]" class="m-menu2">[field:typename/]</a> </li>
+          {/dede:channel}
+        </ul>
+      </li>
+      {/dede:channelartlist}
+    </ul>
+  </div>
+</nav>
+<link type="text/css" rel="stylesheet" href="/skin/css/jquery.mmenu.all.css" />
+<script type="text/javascript" src="/skin/js/jquery.mmenu.all.min.js"></script> 
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	var mmenu=$('nav#mmenu').mmenu({
+		slidingSubmenus: true,
+		classes		: 'mm-white', //mm-fullscreen mm-light
+		extensions	: [ "theme-white" ],
+		offCanvas	: {
+			position: "right", //left, top, right, bottom
+			zposition: "front" //back, front,next
+			//modal		: true
+		},
+		searchfield		: false,
+		counters		: false,
+		//navbars		: {
+			//content : [ "prev", "title", "next" ]
+		//},
+		navbar 		: {
+			title : "网站导航"
+		},
+		header			: {
+			add		: true,
+			update	: true,
+			title	: "网站导航"
+		}
+	});
+	$(".closemenu").click(function() {
+		var mmenuAPI = $("#mmenu").data( "mmenu" );
+		mmenuAPI.close();
+	});
+});
+</script>

@@ -1,0 +1,1 @@
+<h4 class="widget-title dark-title"><a href="[field:typelink/]">[field:typename/]</a></h4>

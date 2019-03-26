@@ -1,0 +1,4 @@
+INSERT INTO `dede_search_keywords` VALUES('1','产品','产品','7','0','1520214780','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','得分','得分','1','0','1519438399','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','dsfds','dsfds','1','0','1520213983','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','装修','装修','1','4','1520216084','0','0');

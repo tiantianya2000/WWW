@@ -1,0 +1,19 @@
+﻿
+.footer{margin-top:0px!important;}
+.post-thumbnail .single-item{filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#8f000000,endcolorstr=#8f000000);display:none!important;}
+.post-thumbnail:hover .single-item{display:block!important;}
+#index-portfolio .portfolio-hover{display:none;}
+
+/* 内页 */
+
+.searchform #s{line-height:32px;}
+.our-work .gallery-item .media-container{filter:alpha(opacity=0);}
+.our-work .gallery-item .gallery-btn{filter:alpha(opacity=0);}
+.our-work .gallery-item figure:hover .gallery-btn{filter:alpha(opacity=100);}
+.glass-animation .background{filter:alpha(opacity=0);}
+.glass-animation .glass > span{filter:alpha(opacity=0);}
+.glass-animation .glass > span i{display:none;}
+.fancybox-nav span{visibility:visible !important;}
+.ps-content{overflow:hidden;}
+.product-gallery .item{padding-right:0;}
+

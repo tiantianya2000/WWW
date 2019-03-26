@@ -1,0 +1,451 @@
+﻿/* 织梦58（dede58.com）做最好的织梦整站模板下载网站 */
+@charset "utf-8";
+/* CSS Document */
+.mian {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 320px;
+	max-width: 640px;
+	overflow: hidden;
+	background-color: #fff;
+	font-family: Microsoft YaHei;
+}
+a {
+	text-decoration: none;
+	color: #666;
+}
+/*tishi*/
+.tishi {
+	width: 4%;
+	position: fixed;
+	left: 48%;
+	bottom: 5%;
+	z-index: 99999
+}
+.tishi img {
+	display: block;
+	width: 100%;
+}
+/*section1*/
+.section1 {
+}
+.section1 img {
+	display: block;
+	margin: 0 auto;
+	width: 28%;
+	margin-bottom: 15%;
+	position: relative;
+	top: -100px;
+	opacity: 0
+}
+.section1 .wen {
+	overflow: hidden;
+	position: relative;
+	top: 100px;
+	opacity: 0
+}
+.section1 h3 {
+	text-align: center;
+	font-weight: normal;
+	font-size: 1.5em;
+	color: #fff;
+	margin-bottom: 0.5em;
+}
+.section1 p {
+	text-align: center;
+	font-size: 0.8em;
+	color: #fff;
+	font-family: "Javanese Text"
+}
+.section1 i {
+	display: block;
+	width: 10%;
+	height: 1px;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top: 5%
+}
+/*section2*/
+
+
+.section2 {
+}
+.section2 .dianpu {
+	height: 57%;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative; /*margin-bottom:5%*/
+}
+.section2 .dianpu span {
+	display: block;
+	width: 6%;
+	position: absolute;
+	bottom: 0;
+	z-index: 999;
+}
+.section2 .dianpu span img {
+	display: block;
+	width: 100%;
+}
+.section2 .dianpu .btn01 {
+	left: 0;
+}
+.section2 .dianpu .btn02 {
+	right: 0
+}
+.section2 .dpBox {
+	overflow: hidden;
+	height: 100%;
+	position: relative;
+}
+.section2 .dpBox .dpList {
+	overflow: hidden;
+	width: 100%;
+}
+.section2 .dpList img {
+	display: block;
+	width: 100%;
+}
+.section2 .dpList em {
+	display: block;
+	text-align: center;
+	font-size: 1.5em;
+	color: #333;
+	margin-top: 1.25em;
+}
+/*.section2 .search{ background:url(../img/p02_ditu.jpg) no-repeat center; background-size:65%; padding:10% 0; width:90%; margin:0 auto;}
+.section2 .search p{ text-align:center; font-size:1.5em; color:#333; margin-bottom:5%;}
+.section2 .sBox{ display:block; width:100%; background-color:#2d2d2d; overflow:hidden;}
+.section2 .sBox input{ width:70%; float:left; height:3em; border:none; background:none; outline:none; line-height:3em; font-size:1em; color:#fff; padding:3%;}
+.section2 .sBox a{ display:block; width:10%; margin-right:3%; margin-top:4%; float:right}
+.section2 .sBox a img{ display:block; width:90%;}*/
+
+.section2 .search {
+	background: url(../img/p02_ditu.jpg) no-repeat center;
+	background-size: 100%; /*padding:20% 0;*/
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+.section2 .search p {
+	text-align: center;
+	font-size: 1.5em;
+	color: #333;
+	margin-bottom: 5%;
+}
+.section2 .sBox {
+	display: block;
+	width: 100%;
+	background-color: #2d2d2d;
+	overflow: hidden;
+}
+.section2 .sBox input {
+	width: 70%;
+	float: left;
+	height: 3em;
+	border: none;
+	background: none;
+	outline: none;
+	line-height: 3em;
+	font-size: 1em;
+	color: #fff;
+	padding: 3%;
+}
+.section2 .sBox span {
+	display: block;
+	width: 10%;
+	margin-right: 3%;
+	margin-top: 4%;
+	float: right
+}
+.section2 .sBox span img {
+	display: block;
+	width: 90%;
+}
+.section2 .bor {
+	overflow: hidden;
+	border: 3px solid #2d2d2d;
+}
+.section2 .wen {
+	overflow: hidden;
+	width: 90%;
+	padding: 5%;
+	background-color: #fff;
+	opacity: 0.6;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	color: #000;
+	text-align: justify
+}
+.section2 .slide {
+	position: relative
+}
+.section2 .slide img {
+	display: block;
+	width: 90%;
+	position: absolute;
+	left: 5%;
+	top: 15%
+}
+.section2 .slide em {
+	display: block;
+	text-align: center;
+	font-size: 1.5em;
+	color: #333;
+	margin-top: 1.5em;
+}
+.section2 .fp-controlArrow.fp-next {
+	top: 85%
+}
+.section2 .fp-controlArrow.fp-prev {
+	top: 85%
+}
+/*section3
+.section3 {}
+
+.section3 .se3_box{ overflow:hidden; width:90%; margin:0 auto; position:relative}
+.section3 .se3_box span{ display:block; width:6%; position:absolute; top:45%;}
+.section3 .se3_box span img{ display:block; width:100%;}
+.section3 .se3_box .btn01{ left:0;}
+.section3 .se3_box .btn02{ right:0}
+.section3 .se3_tu{ overflow:hidden; width:75%; margin:0 auto; position:relative}
+.section3 .se3_list{ overflow:hidden; width:100%; padding:5% 0}
+.section3 .se3_list img{ display:block; width:90%; margin:0 auto; box-shadow:0 0 10px #333}
+*/
+
+
+.section3 img {
+	display: block;
+	margin: 0 auto;
+	height: 100%;
+	padding-top: 4.5em
+}
+.section3 p {
+	text-align: center;
+	font-size: 1.5em;
+	color: #333;
+}
+.section4 img {
+	display: block;
+	float: left;
+	margin: 1px 0;
+	position: relative
+}
+.section4 a:nth-child(1) img, .section4 a:nth-child(2) img {
+	width: 49.8%;
+}
+.section4 a:nth-child(2) img {
+	margin-right: 0.4%;
+}
+.section4 a:nth-child(3) img {
+	width: 100%;
+}
+/*section5*/
+.section5 .imgtop {
+	display: block;
+	width: 100%;
+	position: relative
+}
+.section5 .xg01 {
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+	padding: 0.5em 0;
+	background-color: #333;
+	position: relative
+}
+.section5 .xg01 img {
+	display: block;
+	margin: 0 auto;
+	width: 18%;
+	margin-bottom: 0.2em;
+}
+.section5 .xg01 p {
+	font-size: 1em;
+	color: #fff
+}
+.section5 h3 {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	font-size: 1.1em;
+	color: #333;
+	width: 80%;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top: 0.2em;
+	position: relative
+}
+.section5 .xg02 {
+	overflow: hidden;
+	width: 94%;
+	margin: 0 auto;
+	border: 3px solid #bababa;
+	padding: 1.2em 0 0.5em 0;
+	margin-top: -0.6em;
+	position: relative
+}
+.section5 .xg02 ul {
+	overflow: hidden;
+	width: 100%;
+}
+.section5 .xg02 li {
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+.section5 .xg02 li img {
+	display: block;
+	margin: 0 auto;
+	width: 40%;
+	margin-bottom: 0.2em;
+}
+.section5 .xg02 li b {
+	display: block;
+	font-size: 0.6em;
+	color: #333
+}
+.section5 .xg02 li em {
+	display: block;
+	font-size: 0.5em;
+	color: #333;
+	margin-top: 0.2em
+}
+.section5 .xg03 {
+	overflow: hidden;
+	width: 100%;
+	margin: 0.5em 0;
+	position: relative
+}
+.section5 .xg03 img {
+	display: block;
+	margin: 0.2em auto;
+	width: 3%;
+}
+.section5 .xg03 p {
+	font-size: 1em;
+	color: #333;
+	text-align: center
+}
+.section5 .xg03 p b {
+	font-size: 1.2em;
+	color: #ea001d
+}
+.section5 .xg04 {
+	overflow: hidden;
+	width: 94%;
+	margin: 0 auto;
+	border: 3px solid #bababa;
+	padding: 0.5em 0;
+	position: relative
+}
+.section5 .xg04 img {
+	display: block;
+	width: 3%;
+	margin: 0.2em auto;
+}
+.section5 .xg04 p {
+	font-size: 1em;
+	color: #333;
+	text-align: center
+}
+.section5 .xg04 p b {
+	font-size: 1.2em;
+	color: #ea001d
+}
+.section5 .xg04 a {
+	display: block;
+	text-align: center;
+	font-size: 1em;
+	color: #333;
+}
+/*section6*/
+.section6 {
+	position: relative
+}
+.section6 .toplogo {
+	overflow: hidden;
+	width: 90%;
+	margin: 0 auto;
+	background: url(../img/p06_tu.jpg) no-repeat center top;
+	background-size: 100%;
+}
+.section6 .toplogo img {
+	display: block;
+	margin: 0 auto;
+	width: 16%;
+	margin-top: 10%;
+	margin-bottom: 7%;
+}
+.section6 .toplogo h3 {
+	font-size: 1em;
+	color: #000;
+	text-align: center;
+	margin-bottom: 5%;
+}
+.section6 .toplogo i {
+	display: block;
+	margin: 0 auto;
+	width: 10%;
+	height: 1px;
+	background-color: #000;
+	margin-bottom: 8%;
+}
+.section6 ul {
+	overflow: hidden;
+	width: 90%;
+	margin: 0 auto;
+}
+.section6 li {
+	overflow: hidden;
+	border-bottom: 1px solid #d7d7d7;
+	font-size: 1em;
+	padding: 3% 0;
+	position: relative
+}
+.section6 li a {
+	display: block;
+	float: left;
+	color: #000;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 80%;
+}
+.section6 li span {
+	float: right;
+	color: #999;
+	font-family: Arial
+}
+ @media screen and (min-width:320px) {
+body {
+	font-size: 75%;
+}
+}
+@media screen and (min-width:375px) {
+body {
+	font-size: 87.5%;
+}
+}
+@media screen and (min-width:480px) {
+body {
+	font-size: 87.5%;
+}
+}
+@media screen and (min-width:540px) {
+body {
+	font-size: 112.5%;
+}
+}
+@media screen and (min-width:550px) {
+body {
+	font-size: 125%;
+}
+}
+@media screen and (min-width:640px) {
+body {
+	font-size: 150%;
+}
+}

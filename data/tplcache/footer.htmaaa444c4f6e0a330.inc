@@ -1,0 +1,43 @@
+<?php
+$z[0]=Array("sql"," \r\n              \r\n              [field:content  function='cn_substr(html2text(@me),400)'/]...\r\n              \r\n              ",346,543);
+$z[0][4]=array();
+$z[0][4]['sql']="Select content from dede_arctype where id=9";
+$z[1]=Array("type","\r\n          <h4 class=\"widget-title dark-title\"><a href=\"[field:typelink/]\">[field:typename/]</a></h4>\r\n          ",724,873);
+$z[1][4]=array();
+$z[1][4]['typeid']="17";
+$z[2]=Array("global","",992,1014);
+$z[2][4]=array();
+$z[2][4]['name']="cfg_adr";
+$z[3]=Array("global","",1094,1116);
+$z[3][4]=array();
+$z[3][4]['name']="cfg_tel";
+$z[4]=Array("global","",1191,1213);
+$z[4][4]=array();
+$z[4][4]['name']="cfg_fax";
+$z[5]=Array("global","",1289,1313);
+$z[5][4]=array();
+$z[5][4]['name']="cfg_email";
+$z[6]=Array("global","",1387,1411);
+$z[6][4]=array();
+$z[6][4]['name']="cfg_weibo";
+$z[7]=Array("channel","\r\n            <li><a href=\"[field:typeurl/]\"><i class=\"fa fa-caret-right\"></i> &nbsp;[field:typename/]</a></li>\r\n            ",1772,1945);
+$z[7][4]=array();
+$z[7][4]['type']="top";
+$z[7][4]['row']="6";
+$z[8]=Array("global","",2477,2503);
+$z[8][4]=array();
+$z[8][4]['name']="cfg_powerby";
+$z[9]=Array("global","",3973,3997);
+$z[9][4]=array();
+$z[9][4]['name']="cfg_weibo";
+$z[10]=Array("global","",4072,4098);
+$z[10][4]=array();
+$z[10][4]['name']="cfg_qqweibo";
+$z[11]=Array("global","",4271,4296);
+$z[11][4]=array();
+$z[11][4]['name']="cfg_cmsurl";
+$z[12]=Array("channelartlist","\r\n      <li class=\"m-Lev1 m-nav_4\"> <a href=\"{dede:field name='typeurl'/}\" class=\"m-menu1\">{dede:field name='typename'/}</a>\r\n        <ul class=\"m-submenu\">\r\n          {dede:channel type='son' noself='yes'}\r\n          <li class=\"Lev2\"> <a href=\"[field:typeurl/]\" class=\"m-menu2\">[field:typename/]</a> </li>\r\n          {/dede:channel}\r\n        </ul>\r\n      </li>\r\n      ",4608,5033);
+$z[12][4]=array();
+$z[12][4]['typeid']="top";
+
+?>

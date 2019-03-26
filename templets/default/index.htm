@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit" />
+<meta name="robots" content="index, follow" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="order by dede58.com" />
+<link href="/skin/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/et-line.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/animate.min.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/settings.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/navstylechange.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/cubeportfolio-4.min.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/style.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/responsive.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/skin/css/tk.css" media="screen" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="/skin/js/jquery-1.20.2.min.js"></script>
+<script type="text/javascript" src="/skin/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/skin/js/modernizr.custom.js"></script>
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+<!--[if lt IE 9]>
+<script src="/skin/js/html5.js"></script>
+<script src="/skin/js/respond.min.js"></script>
+<style>
+	article,aside,dialog,footer,header,section,nav,figure,menu{display:block;padding:0;margin:0;}
+</style>
+<link rel="stylesheet" href="/skin/css/ie.css" type="text/css" media="screen"/>
+<![endif]-->
+
+<!--[if lte IE 9]>
+<script src="/skin/js/jquery.placeholder.js"></script>
+<script>
+jQuery(document).ready(function($){
+	$('input, textarea').placeholder();
+});
+</script>
+<script type="text/javascript" src="/skin/js/pie.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$('.indexci img').each(function() {
+		PIE.attach(this);  
+	});  
+});
+</script>
+<![endif]-->
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script type="text/javascript" src="/skin/js/selectivizr.js"></script>
+  <script type="text/javascript" src="/skin/js/excanvas.compiled.js"></script>
+<![endif]-->
+</head>
+<body>
+<!--[if lt IE 8]>
+	<div class="lt-ie8-bg">
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser.</p>
+		<p>Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<p class="browsehappy">对不起，您正在使用的是 <strong>过时</strong> 的浏览器.</p>
+		<p>请升级您的浏览器（IE8+，或者是火狐、谷歌、Opera、Safari等现代浏览器），以改进您的用户体验！</p>
+	</div>
+	<style>
+	.lt-ie8-bg{z-index:11111;position:absolute;top:0;left:0;right:0;bottom:0;background-color:#333;color:#999;padding:100px 20px;text-align:center;font-size:26px}
+	.lt-ie8-bg a{color:#f5f5f5;border-bottom:2px solid #fff}
+	.lt-ie8-bg a:hover{text-decoration:none}
+	#page-body-wrap{display:none;}
+	</style>
+<![endif]-->
+<div class="wrapper" id="page-body-wrap">
+{dede:include filename="head.htm"/}
+<div class="tp-banner-container" id="index-slider">
+  <div class="tp-banner">
+    <ul>
+      {dede:arclist typeid='20'}
+      <li data-transition="random-static" data-slotamount="7" data-masterspeed="300" data-saveperformance="off" > <img src="[field:picname/]" alt="banner1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"/> </li>
+      {/dede:arclist}
+    </ul>
+  </div>
+</div>
+<div class="marg30x" id="index-whyus"> {dede:type typeid='21'}
+  <div class="container">
+    <div class="promo-block">
+      <div class="promo-text">[field:typename/]</div>
+      <div class="center-line"></div>
+    </div>
+    <div class="promo-paragraph">[field:description/]</div>
+  </div>
+  {/dede:type}
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ms-12 whyus-item"> {dede:type typeid='25'}
+        <div class="hi-icon-effect">
+          <div class="hi-icon fa fa-cogs"></div>
+          <div class="service-name">[field:typename/]</div>
+          <div class="service-text">[field:description/]</div>
+        </div>
+        {/dede:type} </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ms-12 whyus-item"> {dede:type typeid='23'}
+        <div class="hi-icon-effect">
+          <div class="hi-icon fa fa-empire"></div>
+          <div class="service-name">[field:typename/]</div>
+          <div class="service-text">[field:description/]</div>
+        </div>
+        {/dede:type} </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ms-12 whyus-item"> {dede:type typeid='33'}
+        <div class="hi-icon-effect">
+          <div class="hi-icon fa fa-users"></div>
+          <div class="service-name">[field:typename/]</div>
+          <div class="service-text">[field:description/]</div>
+        </div>
+        {/dede:type} </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ms-12 whyus-item"> {dede:type typeid='34'}
+        <div class="hi-icon-effect">
+          <div class="hi-icon fa fa-heart-o"></div>
+          <div class="service-name">[field:typename/]</div>
+          <div class="service-text">[field:description/]</div>
+        </div>
+        {/dede:type} </div>
+    </div>
+  </div>
+</div>
+<div class="container-color marg50x" id="index-portfolio">
+  <div class="container">
+    <div class="row"> {dede:type typeid='1'}
+      <div class="col-lg-12">
+        <div class="promo-block">
+          <div class="promo-text"><a href="[field:typeurl/]">[field:typename/]</a></div>
+          <div class="center-line"></div>
+        </div>
+        <div class="promo-paragraph">[field:description/]</div>
+      </div>
+      {/dede:type} </div>
+  </div>
+  <div class="container marg30">
+    <div class="cbp-l-grid-projects" id="grid-container">
+      <ul class="row">
+        {dede:arclist typeid='1' row='8' titlelen='50' orderby='pubdate'}
+        <li class="cbp-item iport-item">
+          <div class="cbp-item-wrapper">
+            <div class="portfolio-dankovteam">
+              <div class="portfolio-image"> <a href="[field:arcurl/]" class="thumb-link"><img src="[field:picname/]" alt="[field:title/]"/></a>
+                
+              </div>
+              <h2 class="iport-title"><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h2>
+              
+            </div>
+          </div>
+        </li>
+        {/dede:arclist}
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="prl-1" id="index-count">
+  <div class="prlx">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 count-item marg50">
+          <div class="stats-primary">
+            <div class="stats-block stats-top">
+              <div class="aio-icon-top">
+                <div class="aio-icon none"><i class="icon11-happy fa fa-heart-o"></i></div>
+              </div>
+              <div class="stats-desc">
+                <div class="stats-number number-counter" data-number="23841"><span class="number-count">23841</span></div>
+                <div class="stats-text">我们的客户</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 count-item marg50">
+          <div class="stats-primary">
+            <div class="stats-block stats-top">
+              <div class="aio-icon-top">
+                <div class="aio-icon none"><i class="icon11-tools fa fa-star"></i></div>
+              </div>
+              <div class="stats-desc">
+                <div class="stats-number number-counter" data-number="293"><span class="number-count">293</span></div>
+                <div class="stats-text">合作品牌</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 count-item marg50">
+          <div class="stats-primary">
+            <div class="stats-block stats-top">
+              <div class="aio-icon-top">
+                <div class="aio-icon none"><i class="icon11-trophy fa fa-building"></i></div>
+              </div>
+              <div class="stats-desc">
+                <div class="stats-number number-counter" data-number="5753"><span class="number-count">5753</span></div>
+                <div class="stats-text">厂房面积</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 count-item marg50">
+          <div class="stats-primary">
+            <div class="stats-block stats-top">
+              <div class="aio-icon-top">
+                <div class="aio-icon none"><i class="icon11-envelope fa fa-users"></i></div>
+              </div>
+              <div class="stats-desc">
+                <div class="stats-number number-counter" data-number="302"><span class="number-count">302</span></div>
+                <div class="stats-text">我们的员工</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-color marg50-x" id="index-case">
+  <div class="container">
+    <div class="row"> {dede:type typeid='5'}
+      <div class="col-lg-12">
+        <div class="promo-block">
+          <div class="promo-text"><a href="[field:typelink/]">[field:typename/]</a></div>
+          <div class="center-line"></div>
+        </div>
+        <div class="promo-paragraph">[field:description/]</div>
+      </div>
+      {/dede:type} </div>
+    <div class="row marg30">
+      <div class="testimonials-main"> {dede:arclist typeid='5' row='4' titlelen='50' orderby='pubdate'}
+        <div class="col-md-6 col-sm-12 col-xs-12 iproject-item">
+          <div class="testimonials-block iproject-item">
+            <div class="testimonials-photo"> <a href="[field:arcurl/]"><img src="[field:picname/]" alt="[field:title/]"/></a> </div>
+            <div class="testimonials-text">
+              <div class="testimonials-name">
+                <h4 class="iproject-title"><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h4>
+              </div>
+              <div class="testimonials-desc">
+                <p>[field:description function="cn_substr(@me,200)"/]...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/dede:arclist} </div>
+    </div>
+  </div>
+</div>
+<div id="index-blog">
+  <div class="container marg50x">
+    <div class="row"> {dede:type typeid='16'}
+      <div class="col-lg-12">
+        <div class="promo-block">
+          <div class="promo-text"><a href="[field:typelink/]">[field:typename/]</a></div>
+          <div class="center-line"></div>
+        </div>
+        <div class="promo-paragraph">[field:description/]</div>
+      </div>
+      {/dede:type} </div>
+    <div class="row marg30"> {dede:arclist typeid='16' row='4' titlelen='50' orderby='pubdate'}
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 iblog-item">
+        <div class="blog-main">
+          <div class="blog-images">
+            <div class="post-thumbnail">
+              <div class="single-item"></div>
+              <div class="single-action"><span><a href="[field:arcurl/]"><i class="fa fa-eye"></i></a></span></div>
+              <a href="[field:arcurl/]" class="thumb-link"><img src="[field:picname/]" alt="[field:title/]"/></a> </div>
+          </div>
+          <div class="blog-name"><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></div>
+          <div class="blog-desc">[field:description function="cn_substr(@me,200)"/]...<span class="inews-date">[[field:pubdate function="MyDate('Y-m-d',@me)"/]]</span></div>
+        </div>
+      </div>
+      {/dede:arclist} </div>
+  </div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

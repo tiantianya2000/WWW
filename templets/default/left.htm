@@ -1,0 +1,30 @@
+<aside class="sidebar col-md-3 inner-right" role="complementary">
+  <section class="widget side-search">
+    <h3 class="title">站内搜索</h3>
+    <form  class="searchform" name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+      <input type="hidden" name="kwtype" value="0" />
+      <div class="sform-div">
+        <label class="screen-reader-text" for="s"></label>
+        <input type="text" value="" name="q" placeholder="输入关键字" id="s"/>
+        <input type="submit" id="searchsubmit" value=""/>
+      </div>
+    </form>
+  </section>
+  <section class="widget side-news">
+    <h3 class="title">热点新闻</h3>
+    <div class="tabbed custom-tabbed">
+      <div class="block current">
+        <ul class="widget-list">
+          {dede:arclist typeid='16' row='5' titlelen='50' orderby='pubdate'}
+          <li>
+            <figure><a href="[field:arcurl/]"><img src="[field:picname/]"/></a></figure>
+            <div class="sn-wrapper">
+              <p class="s-desc"><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></p>
+              <span class="comments"><i class="fa fa-calendar"></i> &nbsp;[field:pubdate function="MyDate('Y-m-d',@me)"/]</span> </div>
+          </li>
+          {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+  </section>
+</aside>

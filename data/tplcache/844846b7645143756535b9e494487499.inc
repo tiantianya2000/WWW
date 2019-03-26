@@ -1,0 +1,1 @@
+<li data-transition="random-static" data-slotamount="7" data-masterspeed="300" data-saveperformance="off" > <img src="[field:picname/]" alt="banner1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"/> </li>
